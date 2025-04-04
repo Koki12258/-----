@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body {
+    z-index: -1;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px;
+
+}
+
+/*---------------　自己紹介の項目　と　名前---------------*/
+nav {
+    font-family: 'Ubuntu Mono', monospace !important;
+    margin: 0;
+    background-color: #000;
+    padding: 20px 20px;
+    /* navの背景色 */
+
+    /* ここで固定化 */
+    position: fixed;
+    /* ナビゲーションを固定 */
+    top: 0;
+    /* 画面上部に配置 */
+    left: 0;
+    /* 画面左端に配置 */
+    width: 100%;
+    /* 横幅を100%にして画面いっぱいに広がる */
+    z-index: 1000;
+    /* 他の要素より上に表示されるように */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    font-family: 'Ubuntu Mono', monospace;
+    position: relative;
+    margin-right: 13px;
+    text-align: left;
+}
+
+nav .name {
+    font-family: 'Ubuntu Mono', monospace !important;
+    font-size: 2rem;
+    /* 文字サイズを大きくする */
+    color: #fff;
+    /* 文字色を白に */
+    font-weight: bold;
+    /* 文字を太くする */
+    margin-right: 30px;
+    /* 次のリストとの間にスペースを追加 */
+}
+
+nav a {
+    color: #ffffff;
+    /* 文字色を白に */
+    text-decoration: none;
+    /* リンクの下線を消す */
+    padding: 10px 20px;
+    /* 文字と枠との間隔を調整 */
+    display: block;
+    /* リンク全体をクリック可能に */
+    border-radius: 5px;
+    /* 角を丸くする */
+}
+
+
+.intro-container {
+    background-color: #f5f5f5;
+    color: black;
+    display: flex;
+    justify-content: center;
+    /* 中央に配置 */
+    align-items: center;
+    /* 縦方向も中央揃え */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    /* レスポンシブに合わせて最大幅を調整 */
+}
+
+
+/* 自己紹介セクション全体 */
+.name-highlight {
+    font-size: 2rem;
+    /* 文字サイズを大きく */
+}
+
+/* 左側: 自己紹介テキスト */
+.intro-text {
+    color: black !important;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    /* テキストと画像の間にスペース */
+    text-align: left;
+    /* 左揃えにする */
+}
+
+/* 右側: 画像 */
+.intro-image {
+    flex: 0 0 300px;
+    /* 画像のサイズ固定 */
+    display: flex;
+    justify-content: center;
+    /* 画像を中央に配置 */
+    align-items: center;
+    /* 垂直方向も中央に配置 */
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+img {
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* ===== スライドショーの見た目を調整するCSSを追加 ===== */
+.slide {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    position: absolute;
+    /* 画像の上に文字を重ねる */
+    bottom: 10px;
+    /* 画像の下端から10px上に配置 */
+    left: 10px;
+    /* 左から10px */
+    color: white;
+    /* 文字色を白に */
+    font-size: 1.5rem;
+    /* 文字サイズ */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 背景を半透明の黒にして文字を読みやすく */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* スライドのアイテムに対するスタイル */
+.slide-item {
+    position: relative;
+    /* 画像に文字を重ねるために相対配置 */
+}
